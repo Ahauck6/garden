@@ -14,6 +14,7 @@
         </ul>
     </nav>
 </div>
+    <NuxtPage />
     <!--Footer section-->
     <footer>
     <p v-for="item in footerItems" :key="item.id">&copy;{{ item.year }} {{ item.author }} | {{ item.location }}</p>
