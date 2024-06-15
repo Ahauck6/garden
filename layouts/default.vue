@@ -89,7 +89,7 @@ nav {
 }
 
 //styling for the body
-#app {
+body {
     background-color:  #FFF8DC; 
     color: brown;
     padding: .5rem .5rem 0rem .5rem;
