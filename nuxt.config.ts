@@ -15,15 +15,21 @@ export default defineNuxtConfig({
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css'}
+    ],
+    script: [{
+      src: 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js',
+      tagPosition: 'bodyClose'
+    }]
   }},
 
   css: [
-    '@/assets/main.css',
-    '@/assets/base.css',
-    '@/assets/styles.scss',
-    '@/assets/responsive.scss'
+    'assets/main.css',
+    'assets/base.css',
+    'assets/styles.scss',
+    'assets/responsive.scss',
+    'bootstrap/dist/css/bootstrap.css'
   ],
 
 })
